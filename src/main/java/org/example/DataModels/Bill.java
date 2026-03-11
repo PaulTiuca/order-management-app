@@ -11,36 +11,4 @@ import java.time.LocalDateTime;
  * @param date
  */
 public record Bill(int orderId, String clientName, String productName, int quantity, LocalDateTime date) {
-    public Bill(int orderId, String clientName, String productName, int quantity, LocalDateTime date) {
-        this.orderId = orderId;
-        this.clientName = clientName;
-        this.productName = productName;
-        this.quantity = quantity;
-        this.date = date;
-    }
-
-    @Override
-    public int orderId() {
-        return orderId;
-    }
-
-    @Override
-    public String clientName() {
-        return clientName;
-    }
-
-    @Override
-    public String productName() {
-        return productName;
-    }
-
-    @Override
-    public int quantity() {
-        return quantity;
-    }
-
-    @Override
-    public LocalDateTime date() {
-        return date;
-    }
 }
