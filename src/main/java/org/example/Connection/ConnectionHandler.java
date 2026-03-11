@@ -15,8 +15,8 @@ public class ConnectionHandler {
     private static final Logger LOGGER = Logger.getLogger(ConnectionHandler.class.getName());
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String DBURL = "jdbc:mysql://localhost:3306/OrderManagement";
-    private static final String USER = "root";
-    private static final String PASS = "password_here";
+    private static final String USER = "your_username_here";
+    private static final String PASS = "your_password_here";
 
     private static ConnectionHandler singleInstance = new ConnectionHandler();
 
